@@ -1,0 +1,87 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" /> 
+<title>tab选项卡</title> 
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="pz_tab.css" />
+<script type="text/javascript" src="../../js/lib/jquery.js"></script>
+<script type="text/javascript" src="../../js/lib/jquery-easing.js"></script>
+<script type="text/javascript" src="../../js/lib/pz-widgets.js?2013-05-21"></script>
+</head> 
+<body style="padding:20px;">      
+	<!--
+    	data-widget-config='{
+                            "triggerType":"mouseover",//默认为mouseover，[click/mouseover]
+                            "effect":"fade", 		  //切换的动画, 默认为none  [none/fade]
+                            "autoTime":2              //是否自动播放，放指定该值的时候，就执行自动播放，值就是自动播放的间隔，（2秒）
+                            }'
+    -->
+
+    <div class="J_PZTab pz-tab" data-widget-config='{
+    												"triggerType":"mouseover",
+                                                    "effect":"fade",
+                                                    "autoTime":5
+                                                    }'>
+    	<ul class="tab-nav">
+        	<li class="actived">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <div class="content-wrap">
+        	<div style="background:#9CF;" class="content-item current">content1</div>
+        	<div style="background:#FCF;" class="content-item">content2</div>
+            <div style="background:#F3F;" class="content-item">content3</div>
+        </div>
+    </div>
+
+
+
+    <div class="J_PZTab pz-tab" data-widget-config='{
+    												"triggerType":"mouseover",
+                                                    "effect":"none"
+                                                    }'>
+    	<ul class="tab-nav">
+        	<li class="actived">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <div class="content-wrap">
+        	<div style="background:#9CF;" class="content-item current">content1</div>
+        	<div style="background:#FCF;" class="content-item">content2</div>
+            <div style="background:#F3F;" class="content-item">content3</div>
+        </div>
+    </div>
+
+
+
+    <div class="J_PZTab pz-tab1" data-widget-config='{
+    												"triggerType":"mouseover",
+                                                    "effect":"fade",
+                                                    "autoTime":2
+                                                    }'>
+    	<ul class="tab-nav">
+        	<li class="actived">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+            <li>tab4</li>
+            <li>tab5</li>
+        </ul>
+        <div class="content-wrap">
+        	<div style="background:#9CF;" class="content-item current">content1</div>
+        	<div style="background:#FCF;" class="content-item">content2</div>
+            <div style="background:#F3F;" class="content-item">content3</div>
+            <div style="background:#FCF;" class="content-item">content4</div>
+            <div style="background:#F3F;" class="content-item">content5</div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+PZ_Tab.init($(".J_PZTab"));
+</script>
+
+   
+</body> 
+</html>
